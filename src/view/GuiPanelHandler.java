@@ -4,7 +4,7 @@ import controll.Controller;
 
 import javax.swing.*;
 
-public class Gui {
+public class GuiPanelHandler {
     private JProgressBar progressBar1;
     private JButton button1;
     private JButton button4;
@@ -14,9 +14,17 @@ public class Gui {
     private JButton button6;
     private JFormattedTextField formattedTextField1;
     private JButton button5;
+    private JPanel panel;
+    private JComboBox comboBox1;
 
     private Controller controller;
 
-    public Gui(Controller controller) {
+    public GuiPanelHandler(Controller controller) {
+        this.controller = controller;
     }
+
+    public JPanel getPanel(){
+        return panel;
+    }
+
 }

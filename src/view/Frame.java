@@ -7,12 +7,13 @@ import javax.swing.*;
 
 public class Frame extends JFrame{
 
-    private Gui gui;
-    private Controller controller;
+    private GuiPanelHandler gui;
 
     public Frame(Controller controller) {
-        this.controller = controller;
-        this.gui = new Gui(controller);
-
+        this.gui = new GuiPanelHandler(controller);
+        this.setContentPane(gui.getPanel());
+        this.setVisible(true);
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        this.setBounds(50,50,500,400);
     }
 }
