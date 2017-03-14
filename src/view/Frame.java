@@ -14,6 +14,6 @@ public class Frame extends JFrame{
         this.setContentPane(gui.getPanel());
         this.setVisible(true);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        this.setBounds(50,50,500,400);
+        this.setBounds(50,50,500,470);
     }
 }
